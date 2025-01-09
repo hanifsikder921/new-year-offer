@@ -1,43 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --background_color: #1E1E1E;
-    --text-color:rgba(7, 2, 17, 0.6);
+:root {
+    --text-color: rgba(7, 2, 17, 0.6);
 }
 
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+
+body {
+    width: 100vw;
     font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
 }
-main{
-    flex: 1;
-}
+
+
 
 /* Header Section Design Start=====================================================> */
 
-header{
+header {
     display: flex;
     width: 1320px;
     height: 600px;
     margin: 50px auto;
-    
+
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 100%;
     border-radius: 16px;
     position: relative;
-   
+
+
 }
 
-.banner::after{
+.banner .btext {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
+.banner .btext h3 {
+    color: rgb(255, 255, 255);
+    font-family: Merriweather;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.banner .btext h2 {
+    color: rgb(255, 255, 255);
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.banner::after {
     content: "";
     position: absolute;
     top: 0;
@@ -46,17 +76,18 @@ header{
     height: 100%;
     background-image: linear-gradient(rgba(7, 2, 17, 1), rgba(7, 2, 17, 0));
     border-radius: 16px;
-   
+
 }
 
 /* Offer Section Start=============================================================> */
 
-.offer{
+.offer {
     padding: 50px 125px;
     text-align: center;
     text-transform: uppercase;
 }
-.offer h2{
+
+.offer h2 {
     font-family: "Inter", serif;
     font-weight: bold;
     color: red;
@@ -64,21 +95,21 @@ header{
     margin-bottom: 48px;
 }
 
-.offer h4{
+.offer h4 {
     font-size: 24px;
     color: red;
     font-weight: 500;
     margin-bottom: 16px;
 }
 
-.offer h3{
+.offer h3 {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 48px;
 }
 
 /* Welcome Section Design Start ======================================================> */
-.welcome{
+.welcome {
     width: 1320px;
     height: 600px;
     margin: 120px auto;
@@ -94,83 +125,84 @@ header{
 }
 
 
-.welcome .content{
+.welcome .content {
     color: white;
-    
+
 }
 
-.welcome .content h3{
+.welcome .content h3 {
     font-size: 64px;
     margin-bottom: 24px;
     font-family: "Merriweather", serif;
 }
 
-.welcome .content p{
+.welcome .content p {
     font-size: 18px;
     margin-bottom: 48px;
 }
-.welcome .content >button{
+
+.welcome .content>button {
     border: none;
     background: none;
     margin-left: 35px;
 }
 
-.welcome .content a{
+.welcome .content a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
 
-.image{
+.image {
     mix-blend-mode: color-dodge;
 }
 
 /* Event Section Start===================================================> */
 
-.event{
- width: 1320px;
- height: 480px;
- display: flex;
- margin: 0 auto;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- background-image: linear-gradient(to top,rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.1));
- border-radius: 16px;
- padding: 50px 125px;
+.event {
+    width: 1320px;
+    height: 480px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.1));
+    border-radius: 16px;
+    padding: 50px 125px;
 }
 
-.event h3{
+.event h3 {
     font-size: 32px;
     font-weight: 600;
     color: black;
     margin-bottom: 10px;
 }
 
-.event >button{
+.event>button {
     background-color: red;
-    font-size:18px ;
+    font-size: 18px;
     margin: 20px 5px;
     border: none;
     border-radius: 8px;
     padding: 10px 15px;
 }
 
-.event button a{
+.event button a {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
 }
 
-.event > h3 > .subject{
+.event>h3>.subject {
     color: red;
 }
 
 /* Comming Soon Section Design Start========================================> */
 
-.comming-soon{
+.comming-soon {
     width: 1320px;
     height: 460px;
     display: flex;
@@ -178,35 +210,37 @@ header{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    
+
 }
 
-.comming-soon .common{
+.comming-soon .common {
     width: 33%;
     padding: 8px 35px;
 }
 
-.comming-soon .left h3{
+.comming-soon .left h3 {
     color: red;
     font-size: 24px;
 }
-.comming-soon .left h2{
+
+.comming-soon .left h2 {
     color: black;
     font-size: 48px;
     margin: 22px 0px;
 }
 
-.comming-soon .right h2{
+.comming-soon .right h2 {
     font-size: 48px;
     color: red;
 }
 
-.comming-soon .right p, .comming-soon .left p{
+.comming-soon .right p,
+.comming-soon .left p {
     color: var(--text-color);
     margin: 20px 0px;
 }
 
-.comming-soon .middle img{
+.comming-soon .middle img {
     border: 15px solid red;
     border-radius: 100%;
     padding: 20px;
@@ -214,31 +248,32 @@ header{
 
 /* Holidays Section Design Start=========================================> */
 
-.holidays{
+.holidays {
     width: 1320px;
     height: 986px;
     margin: 120px auto;
     position: relative;
 }
 
-.holidays h5{
+.holidays h5 {
     font-size: 24px;
     font-weight: 500;
     text-align: center;
 }
-.holidays h2{
+
+.holidays h2 {
     font-size: 72px;
     font-weight: 500;
     font-family: "Merriweather", serif;
     margin: 28px 0px;
     text-align: center;
 }
-  
-.holidays h2 span{
+
+.holidays h2 span {
     color: red;
 }
 
-.holidays p{
+.holidays p {
 
     font-size: 20px;
     color: var(--text-color);
@@ -246,30 +281,243 @@ header{
     text-align: center;
 }
 
-.holidays .bg{
+.holidays .bg {
     position: absolute;
     bottom: 0;
     width: 1320px;
     height: 230px;
     z-index: 1;
-    
-    
+
+
 }
-  
-.holidays .flower{
+
+.holidays .flower {
     position: absolute;
     bottom: -20px;
     left: 0;
     z-index: 3;
 
 }
-  
-.holidays .disc{
+
+.holidays .disc {
     position: absolute;
-    bottom:150px;
+    bottom: 150px;
     right: 0;
     padding: 100px;
     z-index: 3;
-    
+
 }
-  
+
+
+/* Best Gift Section Design Start==========================================> */
+
+.bestgift {
+    width: 1320px;
+    margin: 120px auto;
+
+
+}
+
+.bestgift h4 {
+    font-size: 24px;
+    color: red;
+    text-align: left;
+}
+
+.bestgift h3 {
+    font-size: 48px;
+    color: black;
+    font-weight: 900;
+    text-align: left;
+    font-family: "Merriweather", serif;
+}
+
+.bestgift p {
+    font-size: 20px;
+    text-align: left;
+    color: var(--text-color);
+    margin-bottom: 48px;
+}
+
+.display-image {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.display-image .upper>img,
+.display-image .lower>img {
+    width: 424px;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.upper,
+.lower {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+
+}
+
+/* NewsLetter Sectio Design Start=================================================> */
+
+.newsletter {
+    width: 1320px;
+    margin: 120px auto;
+    padding: 80px 212px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+.newsletter .newscontent>img {
+    width: 150px;
+    height: 150px;
+}
+
+.newsletter .newscontent h3 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Merriweather", serif;
+    color: black;
+    margin: 40px auto 22px;
+}
+
+.newsletter .newscontent p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.subscription {
+    width: 648px;
+    height: 72px;
+    background: rgb(255, 255, 255);
+    margin: 50px auto 0px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription .message {
+    width: 70%;
+    height: 100%;
+}
+
+.subscription .buton {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+
+}
+
+input[type="email"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: var(--text-color);
+    padding-left: 30px;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Footer Section Design Start========================================================================> */
+
+
+footer {
+    width: 100vw;
+    height: 609px;
+    background: rgb(7, 2, 17);
+    padding: 120px 140px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 135px;
+}
+
+.address p {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.address .num {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 40px;
+    text-align: center;
+    align-content: center;
+
+}
+
+.address .num a img {
+    margin-right: 10px;
+
+}
+
+footer .num a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+
+
+}
+
+footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 50px auto;
+}
+
+footer .social-media {
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.copyright {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+
+.copyright p:nth-child(2) {
+    cursor: pointer;
+}
+
+/* Website Design Full Complete===========================================================================> */
+/* Website Design Full Complete===========================================================================> */
