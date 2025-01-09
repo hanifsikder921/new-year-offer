@@ -12,8 +12,6 @@
 body {
     width: 100vw;
     font-family: "Inter", serif;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -414,6 +412,7 @@ header {
     width: 30%;
     height: 100%;
     text-align: center;
+    
 
 }
 
@@ -425,6 +424,10 @@ input[type="email"] {
     font-size: 18px;
     color: var(--text-color);
     padding-left: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+    
 }
 
 input[type="button"] {
@@ -438,18 +441,19 @@ input[type="button"] {
     background-color: red;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    cursor: pointer;
 }
 
 /* Footer Section Design Start========================================================================> */
 
 
 footer {
-    width: 100vw;
     height: 609px;
     background: rgb(7, 2, 17);
     padding: 120px 140px;
     color: white;
     box-sizing: border-box;
+    
 }
 
 .address {
